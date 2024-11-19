@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+        <RollingFile name="FileAppender" fileName="1-0-0-level-0/1-2-logging/src/main/resources/application.log" filePattern="1-0-0-level-0/1-2-logging/src/main/resources/application-%d{yyyy-MM-dd-HH-mm-ss}-%i.log">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10" />
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="ConsoleAppender" />
+            <AppenderRef ref="FileAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>
