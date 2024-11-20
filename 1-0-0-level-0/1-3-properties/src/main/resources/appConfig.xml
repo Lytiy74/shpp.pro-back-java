@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>Our database secret login and password</comment>
+    <entry key="DB_URL">jdbc:mysql://localhost:3306/</entry>
+    <entry key="USER_NAME">ADMIN</entry>
+    <entry key="USER_PASSWORD">veryStrongPassword</entry>
+</properties>
