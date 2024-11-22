@@ -16,6 +16,7 @@
         <module>1-1-building-java-project/1-1-1-compile</module>
         <module>1-1-building-java-project/1-1-2-maven</module>
         <module>1-2-logging</module>
+        <module>1-6-practice</module>
     </modules>
 
     <properties>
